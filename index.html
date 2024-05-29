@@ -18,6 +18,9 @@
   <body>
     <!--Header section-->
     <header class="header">
+      <div class="header__logo-mobile">
+        <a href="./index.html">WEB<span>STUDIO</span></a>
+      </div>
       <div class="container header__container section">
         <div class="header__logo">
           <a href="./index.html">Web<span>Studio</span></a>
@@ -29,15 +32,92 @@
             <li><a href="#">Contacts</a></li>
           </ul>
         </nav>
-        <div class="header__info">
-          
-          <div class="contact__icon-envelope"><a href="mailto:info@devstudio.com"><svg class="svg-envelope"><use href="./images/icons.svg#icon-envelope" /></svg>info@devstudio.com</a></div>
-          
+        <div class="header__info info">
+          <div class="contact__icon-envelope">
+            <a href="mailto:info@devstudio.com"
+              ><svg class="svg-envelope">
+                <use href="./images/icons.svg#icon-envelope" /></svg
+              >info@devstudio.com</a
+            >
+          </div>
+
           <div class="contact__icon-phone">
-          <a href="tel:+12127724150"><svg class="svg__phone"><use href="./images/icons.svg#icon-smartphone" /></svg>+1 212-772-4150</a>
+            <a href="tel:+12127724150"
+              ><svg class="svg__phone">
+                <use href="./images/icons.svg#icon-smartphone" /></svg
+              >+1 212-772-4150</a
+            >
+          </div>
         </div>
       </div>
+      <button
+        class="js-open-menu button__toggle-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <svg
+          width="24"
+          height="24"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
     </header>
+    <div class="js-menu-container">
+      <button class="js-close-menu button-close-menu">X</button>
+      <nav class="header__navigation">
+        <ul class="header__ul">
+          <li><a href="./index.html" class="active">Studio</a></li>
+          <li><a href="./portofolio.html">Portofolio</a></li>
+          <li><a href="#">Contacts</a></li>
+        </ul>
+      </nav>
+      <div class="header__info">
+        <div class="contact__icon-phone">
+          <a href="tel:+12127724150">+11 (000) 111-11-11</a>
+        </div>
+        <div class="contact__icon-envelope">
+          <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+        </div>
+      </div>
+      <ul class="team__social">
+        <li>
+          <a href="">
+            <svg class="icon">
+              <use href="./images/icons.svg#icon-instagram" />
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <svg class="icon">
+              <use href="./images/icons.svg#icon-twitter" />
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <svg class="icon">
+              <use href="./images/icons.svg#icon-facebook-1" />
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <svg class="icon">
+              <use href="./images/icons.svg#icon-linkedin" />
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
     <!--Main section-->
     <main>
       <!--Hero section-->
@@ -45,8 +125,7 @@
         <div class="container">
           <div class="hero-title">
             <h1 class="hero-section__title">
-              EFFECTIVE SOLUTIONS FOR <br />
-              YOUR BUSINESS
+              EFFECTIVE SOLUTIONS <br />FOR YOUR BUSINESS
             </h1>
             <div class="header-button">
               <button data-modal-open class="header__request" type="button">
@@ -60,7 +139,12 @@
       <div class="container about-section section">
         <ul class="about-section__ul">
           <li>
-            <div class="about-section__icon"> <a href=""><svg class="about-section__svg"><use href="./images/icons.svg#icon-antenna"/></svg></a></div>
+            <div class="about-section__icon">
+              <a href=""
+                ><svg class="about-section__svg">
+                  <use href="./images/icons.svg#icon-antenna" /></svg
+              ></a>
+            </div>
             <p><strong>ATTENTION TO DETAILS</strong></p>
             <p>
               We go into all the details and processes<br />
@@ -68,7 +152,12 @@
             </p>
           </li>
           <li>
-             <div class="about-section__icon"> <a href=""><svg class="about-section__svg"><use href="./images/icons.svg#icon-clock"/></svg></a></div>
+            <div class="about-section__icon">
+              <a href=""
+                ><svg class="about-section__svg">
+                  <use href="./images/icons.svg#icon-clock" /></svg
+              ></a>
+            </div>
             <p><strong>PUNCTUALITY</strong></p>
             <p>
               With us, you can feel safe and secure. <br />An important
@@ -77,7 +166,12 @@
             </p>
           </li>
           <li>
-             <div class="about-section__icon"> <a href=""><svg class="about-section__svg"><use href="./images/icons.svg#icon-diagram"/></svg></a></div>
+            <div class="about-section__icon">
+              <a href=""
+                ><svg class="about-section__svg">
+                  <use href="./images/icons.svg#icon-diagram" /></svg
+              ></a>
+            </div>
             <p><strong>PLANNING</strong></p>
             <p>
               You will be able to observe and <br />participate in every phase
@@ -85,7 +179,12 @@
             </p>
           </li>
           <li>
-             <div class="about-section__icon"> <a href=""><svg class="about-section__svg"><use href="./images/icons.svg#icon-astronaut"/></svg></a></div>
+            <div class="about-section__icon">
+              <a href=""
+                ><svg class="about-section__svg">
+                  <use href="./images/icons.svg#icon-astronaut" /></svg
+              ></a>
+            </div>
             <p><strong>MODERN TECHNOLOGIES</strong></p>
             <p>
               We use innovative tools to solve <br />assigned tasks. It's time
@@ -99,30 +198,20 @@
         <div class="container">
           <h2 class="what-we-do-section__title">What we do</h2>
           <div class="what-we-do-img">
-           
-            <div 
-            class="overlay__img">
-             <div class="what-we-do-section__overlay">DESKTOP APPS</div>
-            <img
-              src="images/box1.jpg"
-              alt="security code"
-            /></div>
-             
-             <div 
-            class="overlay__img">
-            <div class="what-we-do-section__overlay">MOBILE APPS</div>
-            <img
-              src="images/box2.jpg"
-              alt="mobile security"
-            /></div>
-             
-            <div 
-            class="overlay__img">
-            <div class="what-we-do-section__overlay">DESIGN SOLUTIONS</div>
-             <img
-              src="images/box3.jpg"
-              alt="color palette"
-            /></div>
+            <div class="overlay__img">
+              <div class="what-we-do-section__overlay">DESKTOP APPS</div>
+              <img src="images/box1.jpg" alt="security code" />
+            </div>
+
+            <div class="overlay__img">
+              <div class="what-we-do-section__overlay">MOBILE APPS</div>
+              <img src="images/box2.jpg" alt="mobile security" />
+            </div>
+
+            <div class="overlay__img">
+              <div class="what-we-do-section__overlay">DESIGN SOLUTIONS</div>
+              <img src="images/box3.jpg" alt="color palette" />
+            </div>
           </div>
         </div>
       </section>
@@ -188,9 +277,7 @@
                 <li>
                   <a href="">
                     <svg class="icon">
-                      <use
-                        href="./images/icons.svg#icon-facebook-1"
-                      ></use>
+                      <use href="./images/icons.svg#icon-facebook-1"></use>
                     </svg>
                   </a>
                 </li>
@@ -225,9 +312,7 @@
                 <li>
                   <a href="">
                     <svg class="icon">
-                      <use
-                        href="./images/icons.svg#icon-facebook-1"
-                      ></use>
+                      <use href="./images/icons.svg#icon-facebook-1"></use>
                     </svg>
                   </a>
                 </li>
@@ -262,9 +347,7 @@
                 <li>
                   <a href="">
                     <svg class="icon">
-                      <use
-                        href="./images/icons.svg#icon-facebook-1"
-                      ></use>
+                      <use href="./images/icons.svg#icon-facebook-1"></use>
                     </svg>
                   </a>
                 </li>
@@ -284,59 +367,257 @@
       <section class="customers__section">
         <h2 class="customers__title">Regular Customers</h2>
         <ul class="customers__ul">
-          <li><a href=""><svg class="customers__svg"><use href="./images/icons.svg#icon-Logo" /></svg></a></li>
- <li><a href=""><svg class="customers__svg"><use href="./images/icons.svg#icon-Logo-2" /></svg></a></li>
-  <li><a href=""><svg class="customers__svg"><use href="./images/icons.svg#icon-Logo-5" /></svg></a></li>
-   <li><a href=""><svg class="customers__svg"><use href="./images/icons.svg#icon-Logo-3" /></svg></a></li>
-    <li><a href=""><svg class="customers__svg"><use href="./images/icons.svg#icon-Logo-4" /></svg></a></li>
-          </ul>
+          <li>
+            <a href=""
+              ><svg class="customers__svg">
+                <use href="./images/icons.svg#icon-Logo" /></svg
+            ></a>
+          </li>
+          <li>
+            <a href=""
+              ><svg class="customers__svg">
+                <use href="./images/icons.svg#icon-Logo-2" /></svg
+            ></a>
+          </li>
+          <li>
+            <a href=""
+              ><svg class="customers__svg">
+                <use href="./images/icons.svg#icon-Logo-5" /></svg
+            ></a>
+          </li>
+          <li>
+            <a href=""
+              ><svg class="customers__svg">
+                <use href="./images/icons.svg#icon-Logo-3" /></svg
+            ></a>
+          </li>
+          <li>
+            <a href=""
+              ><svg class="customers__svg">
+                <use href="./images/icons.svg#icon-Logo-4" /></svg
+            ></a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="customers__section1">
+        <h2 class="customers__title1">Regular Customers</h2>
+        <ul class="customers__ul1">
+          <li>
+            <a href=""
+              ><svg class="customers__svg1">
+                <use href="./images/icons.svg#icon-Logo" /></svg
+            ></a>
+          </li>
+          <li>
+            <a href=""
+              ><svg class="customers__svg">
+                <use href="./images/icons.svg#icon-Logo-2" /></svg
+            ></a>
+          </li>
+          <li>
+            <a href=""
+              ><svg class="customers__svg">
+                <use href="./images/icons.svg#icon-Logo-5" /></svg
+            ></a>
+          </li>
+          <li>
+            <a href=""
+              ><svg class="customers__svg">
+                <use href="./images/icons.svg#icon-Logo-3" /></svg
+            ></a>
+          </li>
+          <li>
+            <a href=""
+              ><svg class="customers__svg">
+                <use href="./images/icons.svg#icon-Logo-4" /></svg
+            ></a>
+          </li>
+        </ul>
       </section>
     </main>
     <!--Footer section-->
     <footer class="footer-section section">
-      <div class="container">
-        <div class="footer__logo">
-          <a href="#">Web<span>Studio</span></a>
+      <div class="container footer">
+        <div class="logo">
+          <div class="footer__logo">
+            <a href="#">Web<span>Studio</span></a>
+          </div>
+          <address class="footer-section__address">
+            <p>695 Park Ave, NY 10065, USA</p>
+            <div class="footer-section__contact">
+              <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </div>
+            <div class="footer-section__contact">
+              <a href="tel:+12127724150">+1 212-772-4150</a>
+            </div>
+          </address>
         </div>
-        <address class="footer-section__address">
-          <p>695 Park Ave, NY 10065, USA</p>
-          <div class="footer-section__contact">
-            <a href="mailto:info@devstudio.com">info@devstudio.com</a>
-          </div>
-          <div class="footer-section__contact">
-            <a href="tel:+12127724150">+1 212-772-4150</a>
-          </div>
-        </address>
+
+        <div class="social-media">
+          <p>FIND US ON</p>
+          <ul class="social-media__ul">
+            <li>
+              <a href=""
+                ><svg class="contact-svg">
+                  <use href="./images/icons.svg#icon-instagram" /></svg
+              ></a>
+            </li>
+            <li>
+              <a href=""
+                ><svg class="contact-svg">
+                  <use href="./images/icons.svg#icon-twitter" /></svg
+              ></a>
+            </li>
+            <li>
+              <a href=""
+                ><svg class="contact-svg">
+                  <use href="./images/icons.svg#icon-facebook-1" /></svg
+              ></a>
+            </li>
+            <li>
+              <a href=""
+                ><svg class="contact-svg">
+                  <use href="./images/icons.svg#icon-linkedin" /></svg
+              ></a>
+            </li>
+          </ul>
+        </div>
+
+        <form class="form-subscribe">
+          <label class="modal-subscribe"
+            >SUBSCRIBE TO THE NEWSLETTER<input
+              type="text"
+              name="useremail"
+              class="input-subscribe"
+              placeholder="E-mail"
+          /></label>
+          <button type="submit" class="subscribe-button">
+            Subscribe<span
+              ><svg class="subscribe-svg">
+                <use href="./images/icons.svg#icon-icon-send" /></svg
+            ></span>
+          </button>
+        </form>
       </div>
-      <div class="social-media">
-        <p>FIND US ON</p>
-        <ul class="social-media__ul">
-        <li><a href=""><svg class="contact-svg"><use href="./images/icons.svg#icon-instagram" /></svg></a></li>
-        <li><a href=""><svg class="contact-svg"><use href="./images/icons.svg#icon-twitter" /></svg></a></li>
-        <li><a href=""><svg class="contact-svg"><use href="./images/icons.svg#icon-facebook-1" /></svg></a></li>
-        <li><a href=""><svg class="contact-svg"><use href="./images/icons.svg#icon-linkedin" /></svg></a></li>
-     </ul></div>
-    
-      <form class="form-subscribe">
-        <label class="modal-subscribe">SUBSCRIBE TO THE NEWSLETTER<input type="text" name="useremail" class="input-subscribe" placeholder="E-mail" /></label>
-      <button type="submit" class="subscribe-button">Subscribe<span><svg class="subscribe-svg"><use href="./images/icons.svg#icon-icon-send" /></svg></span></button>
-    
-      </form>
     </footer>
-    <div data-modal class="is-hidden"> 
+
+    <footer class="footer-section1">
+      <div class="container footer1">
+        <div class="logo1">
+          <div class="footer__logo1">
+            <a href="#">Web<span>Studio</span></a>
+          </div>
+          <p>
+            Increase the flow of customers and <br />sales for your business
+            with digital<br />
+            marketing & growth solutions.
+          </p>
+        </div>
+
+        <div class="social-media1">
+          <p>Social media</p>
+          <ul class="social-media__ul1">
+            <li>
+              <a href=""
+                ><svg class="contact-svg1">
+                  <use href="./images/icons.svg#icon-instagram" /></svg
+              ></a>
+            </li>
+            <li>
+              <a href=""
+                ><svg class="contact-svg1">
+                  <use href="./images/icons.svg#icon-twitter" /></svg
+              ></a>
+            </li>
+            <li>
+              <a href=""
+                ><svg class="contact-svg1">
+                  <use href="./images/icons.svg#icon-facebook-1" /></svg
+              ></a>
+            </li>
+            <li>
+              <a href=""
+                ><svg class="contact-svg1">
+                  <use href="./images/icons.svg#icon-linkedin" /></svg
+              ></a>
+            </li>
+          </ul>
+        </div>
+
+        <form class="form-subscribe2">
+          <label class="modal-subscribe1"
+            >SUBSCRIBE<input
+              type="text"
+              name="useremail"
+              class="input-subscribe1"
+              placeholder="E-mail"
+          /></label>
+          <button type="submit" class="subscribe-button1">
+            Subscribe<span
+              ><svg class="subscribe-svg1">
+                <use href="./images/icons.svg#icon-icon-send" /></svg
+            ></span>
+          </button>
+        </form>
+      </div>
+    </footer>
+
+    <div data-modal class="is-hidden">
       <div data-modal-content="">
-<button data-modal-close type="button" class="close__button">X</button>
-<h2 class="modal-title">Leave your information and we'll call you back</h2>      
-<form name="modal-form" class="modal-form">
-<label class="modal-form__position">Name<input type="text" name="username" class="modal-form__input"/><svg width="12" height="12px"><use href="./images/icons.svg#icon-person"></use></svg></label>   
-<label class="modal-form__position">Telefon <input type="tel" name="userphone" class="modal-form__input" /><svg width="12" height="12px"><use href="./images/icons.svg#icon-email"></use></svg></label>
-<label class="modal-form__position">Email<input type="email" name="useremail" class="modal-form__input"/><svg width="12" height="12px"><use href="./images/icons.svg#icon-phone"></use></svg></label>
-<label class="modal-form__position">Mesaj <textarea name="mesaj" placeholder="Enter the text" class="modal-form__comments" rows="5"></textarea></label>
-<label class="modal-checkbox__position modal-form__checked"><input type="checkbox" name="agree" vlaue="agree" class="modal-form__input" /><span class="replace-checkbox modal-form-checkbox__position"><svg width="12" height="12px"><use href="./images/icons.svg#icon-Vector-1"></use></svg></span>I agree with the letter and accept the <a href="#" class="condition">Terms and Conditions</a></label>
-<button type="submit" class="modal-form__button">Send</button>
-</form>
-</div>
+        <button data-modal-close type="button" class="close__button">X</button>
+        <h2 class="modal-title">
+          Leave your information and we'll call you back
+        </h2>
+        <form name="modal-form" class="modal-form">
+          <label class="modal-form__position"
+            >Name<input
+              type="text"
+              name="username"
+              class="modal-form__input" /><svg width="12" height="12px">
+              <use href="./images/icons.svg#icon-person"></use></svg
+          ></label>
+          <label class="modal-form__position"
+            >Telefon
+            <input type="tel" name="userphone" class="modal-form__input" /><svg
+              width="12"
+              height="12px"
+            >
+              <use href="./images/icons.svg#icon-email"></use></svg
+          ></label>
+          <label class="modal-form__position"
+            >Email<input
+              type="email"
+              name="useremail"
+              class="modal-form__input" /><svg width="12" height="12px">
+              <use href="./images/icons.svg#icon-phone"></use></svg
+          ></label>
+          <label class="modal-form__position"
+            >Mesaj
+            <textarea
+              name="mesaj"
+              placeholder="Enter the text"
+              class="modal-form__comments"
+              rows="5"
+            ></textarea>
+          </label>
+          <label class="modal-checkbox__position modal-form__checked"
+            ><input
+              type="checkbox"
+              name="agree"
+              vlaue="agree"
+              class="modal-form__input"
+            /><span class="replace-checkbox modal-form-checkbox__position"
+              ><svg width="12" height="12px">
+                <use href="./images/icons.svg#icon-Vector-1"></use></svg></span
+            >I agree with the letter and accept the
+            <a href="#" class="condition">Terms and Conditions</a></label
+          >
+          <button type="submit" class="modal-form__button">Send</button>
+        </form>
+      </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
