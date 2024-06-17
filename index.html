@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <title>Studio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
       href="node_modules/modern-normalize/modern-normalize.css"
@@ -439,127 +440,72 @@
     <!--Footer section-->
     <footer class="footer-section section">
       <div class="container footer">
-        <div class="logo">
-          <div class="footer__logo">
-            <a href="#">Web<span>Studio</span></a>
-          </div>
-          <address class="footer-section__address">
-            <p>695 Park Ave, NY 10065, USA</p>
-            <div class="footer-section__contact">
-              <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+        <ul class="footer__ul">
+          <li>
+            <div class="logo">
+              <div class="footer__logo">
+                <a href="#">Web<span>Studio</span></a>
+              </div>
+              <address class="footer-section__address">
+                <p>695 Park Ave, NY 10065, USA</p>
+                <div class="footer-section__contact">
+                  <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+                </div>
+                <div class="footer-section__contact">
+                  <a href="tel:+12127724150">+1 212-772-4150</a>
+                </div>
+              </address>
             </div>
-            <div class="footer-section__contact">
-              <a href="tel:+12127724150">+1 212-772-4150</a>
+          </li>
+          <li>
+            <div class="social-media">
+              <p>FIND US ON</p>
+              <ul class="social-media__ul">
+                <li>
+                  <a href=""
+                    ><svg class="contact-svg">
+                      <use href="./images/icons.svg#icon-instagram" /></svg
+                  ></a>
+                </li>
+                <li>
+                  <a href=""
+                    ><svg class="contact-svg">
+                      <use href="./images/icons.svg#icon-twitter" /></svg
+                  ></a>
+                </li>
+                <li>
+                  <a href=""
+                    ><svg class="contact-svg">
+                      <use href="./images/icons.svg#icon-facebook-1" /></svg
+                  ></a>
+                </li>
+                <li>
+                  <a href=""
+                    ><svg class="contact-svg">
+                      <use href="./images/icons.svg#icon-linkedin" /></svg
+                  ></a>
+                </li>
+              </ul>
             </div>
-          </address>
-        </div>
-
-        <div class="social-media">
-          <p>FIND US ON</p>
-          <ul class="social-media__ul">
-            <li>
-              <a href=""
-                ><svg class="contact-svg">
-                  <use href="./images/icons.svg#icon-instagram" /></svg
-              ></a>
-            </li>
-            <li>
-              <a href=""
-                ><svg class="contact-svg">
-                  <use href="./images/icons.svg#icon-twitter" /></svg
-              ></a>
-            </li>
-            <li>
-              <a href=""
-                ><svg class="contact-svg">
-                  <use href="./images/icons.svg#icon-facebook-1" /></svg
-              ></a>
-            </li>
-            <li>
-              <a href=""
-                ><svg class="contact-svg">
-                  <use href="./images/icons.svg#icon-linkedin" /></svg
-              ></a>
-            </li>
-          </ul>
-        </div>
-
-        <form class="form-subscribe">
-          <label class="modal-subscribe"
-            >SUBSCRIBE TO THE NEWSLETTER<input
-              type="text"
-              name="useremail"
-              class="input-subscribe"
-              placeholder="E-mail"
-          /></label>
-          <button type="submit" class="subscribe-button">
-            Subscribe<span
-              ><svg class="subscribe-svg">
-                <use href="./images/icons.svg#icon-icon-send" /></svg
-            ></span>
-          </button>
-        </form>
-      </div>
-    </footer>
-
-    <footer class="footer-section1">
-      <div class="container footer1">
-        <div class="logo1">
-          <div class="footer__logo1">
-            <a href="#">Web<span>Studio</span></a>
-          </div>
-          <p>
-            Increase the flow of customers and <br />sales for your business
-            with digital<br />
-            marketing & growth solutions.
-          </p>
-        </div>
-
-        <div class="social-media1">
-          <p>Social media</p>
-          <ul class="social-media__ul1">
-            <li>
-              <a href=""
-                ><svg class="contact-svg1">
-                  <use href="./images/icons.svg#icon-instagram" /></svg
-              ></a>
-            </li>
-            <li>
-              <a href=""
-                ><svg class="contact-svg1">
-                  <use href="./images/icons.svg#icon-twitter" /></svg
-              ></a>
-            </li>
-            <li>
-              <a href=""
-                ><svg class="contact-svg1">
-                  <use href="./images/icons.svg#icon-facebook-1" /></svg
-              ></a>
-            </li>
-            <li>
-              <a href=""
-                ><svg class="contact-svg1">
-                  <use href="./images/icons.svg#icon-linkedin" /></svg
-              ></a>
-            </li>
-          </ul>
-        </div>
-
-        <form class="form-subscribe2">
-          <label class="modal-subscribe1"
-            >SUBSCRIBE<input
-              type="text"
-              name="useremail"
-              class="input-subscribe1"
-              placeholder="E-mail"
-          /></label>
-          <button type="submit" class="subscribe-button1">
-            Subscribe<span
-              ><svg class="subscribe-svg1">
-                <use href="./images/icons.svg#icon-icon-send" /></svg
-            ></span>
-          </button>
-        </form>
+          </li>
+          <li class="form__subscribe-li">
+            <form class="form-subscribe">
+              <label class="modal-subscribe"
+                >SUBSCRIBE TO THE NEWSLETTER<input
+                  type="text"
+                  name="useremail"
+                  class="input-subscribe"
+                  placeholder="E-mail"
+              /></label>
+              <button type="submit" class="subscribe-button">
+                Subscribe<span
+                  ><svg class="subscribe-svg">
+                    <use href="./images/icons.svg#icon-icon-send" /></svg
+                ></span>
+              </button>
+            </form>
+          </li>
+        </ul>
       </div>
     </footer>
 
