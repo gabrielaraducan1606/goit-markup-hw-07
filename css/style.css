@@ -285,6 +285,10 @@ body {
   padding-left: 100px;
 }
 
+.about-section__mobile {
+  display: none;
+}
+
 /*What we do section*/
 .what-we-do-section {
   padding-top: 120px;
@@ -493,7 +497,6 @@ body {
   padding: 156px 100px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 120px;
 }
 
 .logo {
@@ -1028,6 +1031,9 @@ body {
   border-color: var(--blue);
 }
 
+.modal-subscribe__mobile {
+  display: none;
+}
 
 .js-menu-container {
   display: none;
@@ -1073,7 +1079,7 @@ body {
   color: var(--black);
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1158px) {
 
 
   .about-section__ul {
@@ -1104,21 +1110,22 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 300px;
+    gap: 250px;
   }
 
-  .social-media {
-    margin-top: 60%;
-  }
+  .logo {}
+
+  .social-media {}
 
   .form-subscribe {
-    margin-left: 20%;
-
+    margin-left: 20px;
   }
 
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1158px) {
+
+
   .js-open-menu {
     display: block;
   }
@@ -1167,7 +1174,7 @@ body {
     line-height: 40px;
     letter-spacing: 0.02em;
     text-align: left;
-    color: var(--blue);
+    color: var(--iris);
   }
 
   .header__info {
@@ -1178,7 +1185,7 @@ body {
   }
 
   .contact__icon-phone a {
-    color: var(--blue);
+    color: var(--iris);
     font-family: var(--primary-font);
     font-size: 36px;
     font-weight: 700;
@@ -1198,8 +1205,7 @@ body {
   }
 
   .team__social {
-    justify-content: left;
-    padding-left: 40px;
+    display: flex;
     gap: 10px;
   }
 
@@ -1231,5 +1237,381 @@ body {
     cursor: pointer;
     margin-top: 32px;
     margin-left: 388px;
+  }
+}
+
+
+@media screen and ((min-width: 428px) and (max-width: 768px)) {
+
+
+  .container {
+    max-width: 428px;
+    width: 100%;
+  }
+
+
+  .header {
+    margin: 24px 16px;
+    justify-content: space-between;
+  }
+
+  .header__logo-mobile a {
+    display: block;
+    color: var(--iris);
+  }
+
+  .hero-section {
+    width: 100%;
+    max-width: 428px;
+    height: 432px;
+    background-image: linear-gradient(0deg, rgba(47, 48, 68, 0.7), rgba(47, 48, 68, 0.7)), url(../images/dark-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 27%;
+  }
+
+  .hero-section__title {
+    font-family: var(--primary-font);
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    padding-top: 112px;
+  }
+
+  .header-button {
+    padding-top: 72px;
+  }
+
+  .hero-title button {
+    background-color: var(--iris);
+  }
+
+  .about-section {
+    display: none;
+  }
+
+  .about-section__mobile {
+    display: flex;
+    padding: 96px 16px;
+    gap: 72px;
+  }
+
+  .about-section__mobile__ul li {
+    width: 396px;
+    height: 96px;
+    gap: 8px;
+    opacity: 0px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-section__mobile__ul strong {
+    font-family: var(--primary-font);
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: var(--navyblue);
+  }
+
+  .mobile-paragraph {
+    font-family: var(--primary-font);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    text-align: left;
+  }
+
+  .team__social li:hover {
+    background-color: var(--iris);
+  }
+
+  .team__social1 {
+    display: flex;
+    padding-left: 40px;
+    gap: 80px;
+  }
+
+  .team__social li:hover .icon {
+    fill: var(--white);
+  }
+
+
+  .footer__ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .logo {
+    margin-left: -200px;
+    margin-top: -56px;
+  }
+
+  .footer__logo a {
+    color: var(--iris);
+  }
+
+  .social-media {
+    margin-left: -200px;
+    margin-top: -72px;
+  }
+
+  .form-subscribe {
+    display: flex;
+    flex-direction: column;
+    gap: 90px;
+    margin-top: -130px;
+    margin-left: -78px;
+  }
+
+  .modal-subscribe {
+    display: none;
+  }
+
+  .modal-subscribe__mobile {
+    display: block;
+  }
+
+  .modal-subscribe__mobile p {
+    color: var(--white);
+    font-family: var(--primary-font);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    margin-left: -150px;
+    margin-bottom: 16px;
+  }
+
+  .input-subscribe1 {
+    width: 398px;
+    height: 40px;
+    border-radius: 4px;
+    padding: 5px;
+    border: 1px;
+    border: 1px solid #FFFFFF4D;
+    background-color: var(--black);
+    margin-left: -10px;
+  }
+
+  .subscribe-button {
+    margin-top: -70px;
+    margin-left: 101px;
+    width: 165px;
+    height: 40px;
+    gap: 16px;
+    border-radius: 4px;
+    background-color: var(--iris);
+    text-align: left;
+  }
+
+  .form-subscribe svg {
+    width: 20px;
+    height: 20px;
+    top: 4845px;
+    left: 240px;
+    position: absolute;
+    fill: var(--white);
+  }
+
+  .main-ul {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    justify-content: left;
+    margin-left: 16px;
+  }
+}
+
+@media screen and ((min-width: 768px) and (max-width: 1119px)) {
+  .container {
+    max-width: 768px;
+    width: 100%;
+  }
+
+
+  .header {
+    margin: 24px 16px;
+    justify-content: space-between;
+  }
+
+  .header__logo-mobile a {
+    display: block;
+    color: var(--iris);
+  }
+
+  .hero-section {
+    width: 100%;
+    max-width: 768px;
+    height: 436px;
+    background-image: linear-gradient(0deg, rgba(47, 48, 68, 0.7), rgba(47, 48, 68, 0.7)), url(../images/dark-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 27%;
+  }
+
+  .hero-section__title {
+    font-family: var(--primary-font);
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    padding-top: 112px;
+  }
+
+  .header-button {
+    padding-top: 72px;
+  }
+
+  .hero-title button {
+    background-color: var(--iris);
+  }
+
+  .about-section {
+    display: none;
+  }
+
+  .about-section__mobile {
+    display: flex;
+    margin-left: 30px;
+    margin-top: 96px;
+    margin-bottom: 96px;
+  }
+
+  .about-section__mobile ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 72px;
+  }
+
+  .about-section__mobile__ul li {
+    width: 330px;
+    height: 50px;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-section__mobile__ul strong {
+    font-family: var(--primary-font);
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: var(--navyblue);
+  }
+
+  .mobile-paragraph {
+    font-family: var(--primary-font);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    text-align: left;
+  }
+
+  .team__social li:hover {
+    background-color: var(--iris);
+  }
+
+  .team__social1 {
+    display: flex;
+    padding-left: 40px;
+    gap: 80px;
+  }
+
+  .team__social li:hover .icon {
+    fill: var(--white);
+  }
+
+
+  .footer__ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .logo {
+    margin-left: -60px;
+    margin-top: -56px;
+  }
+
+  .footer__logo a {
+    color: var(--iris);
+  }
+
+  .social-media {
+    margin-left: -20px;
+    margin-top: -10px;
+  }
+
+  .form-subscribe {
+    display: flex;
+    gap: 90px;
+    margin-top: -130px;
+    margin-left: 80px;
+  }
+
+  .modal-subscribe {
+    display: none;
+  }
+
+  .modal-subscribe__mobile {
+    display: block;
+  }
+
+  .modal-subscribe__mobile p {
+    color: var(--white);
+    font-family: var(--primary-font);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    margin-bottom: 16px;
+  }
+
+  .input-subscribe1 {
+    width: 264px;
+    height: 40px;
+    border-radius: 4px;
+    padding: 5px;
+    border: 1px;
+    border: 1px solid #FFFFFF4D;
+    background-color: var(--black);
+    margin-left: -10px;
+  }
+
+  .subscribe-button {
+    margin-top: 40px;
+    margin-left: -50px;
+    width: 165px;
+    height: 40px;
+    gap: 16px;
+    border-radius: 4px;
+    background-color: var(--iris);
+    text-align: left;
+  }
+
+  .form-subscribe svg {
+    width: 20px;
+    height: 20px;
+    top: 3170px;
+    left: 600px;
+    position: absolute;
+    fill: var(--white);
+  }
+
+  .cards {
+    width: 356px;
+    height: 420px;
   }
 }

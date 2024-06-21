@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portofolio</title>
     <link
       rel="stylesheet"
@@ -17,27 +18,107 @@
   </head>
   <body>
     <!--Header section-->
-   <header class="header">
+    <header class="header">
+      <div class="header__logo-mobile">
+        <a href="./index.html">WEB<span>STUDIO</span></a>
+      </div>
       <div class="container header__container section">
         <div class="header__logo">
           <a href="./index.html">Web<span>Studio</span></a>
         </div>
         <nav class="header__navigation">
           <ul class="header__ul">
-            <li><a href="./index.html">Studio</a></li>
-            <li><a href="./portofolio.html" class="active">Portofolio</a></li>
+            <li><a href="./index.html" class="active">Studio</a></li>
+            <li><a href="./portofolio.html">Portofolio</a></li>
             <li><a href="#">Contacts</a></li>
           </ul>
         </nav>
-        <div class="header__info">
-          
-          <div class="contact__icon-envelope"><a href="mailto:info@devstudio.com"><svg class="svg-envelope"><use href="./images/icons.svg#icon-envelope" /></svg>info@devstudio.com</a></div>
-          
+        <div class="header__info info">
+          <div class="contact__icon-envelope">
+            <a href="mailto:info@devstudio.com"
+              ><svg class="svg-envelope">
+                <use href="./images/icons.svg#icon-envelope" /></svg
+              >info@devstudio.com</a
+            >
+          </div>
+
           <div class="contact__icon-phone">
-          <a href="tel:+12127724150"><svg class="svg__phone"><use href="./images/icons.svg#icon-smartphone" /></svg>+1 212-772-4150</a>
+            <a href="tel:+12127724150"
+              ><svg class="svg__phone">
+                <use href="./images/icons.svg#icon-smartphone" /></svg
+              >+1 212-772-4150</a
+            >
+          </div>
         </div>
       </div>
+      <button
+        class="js-open-menu button__toggle-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <svg
+          width="24"
+          height="24"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
     </header>
+    <div class="js-menu-container">
+      <button class="js-close-menu button-close-menu">X</button>
+      <nav class="header__navigation">
+        <ul class="header__ul">
+          <li><a href="./index.html" class="active">Studio</a></li>
+          <li><a href="./portofolio.html">Portofolio</a></li>
+          <li><a href="#">Contacts</a></li>
+        </ul>
+      </nav>
+      <div class="header__info">
+        <div class="contact__icon-phone">
+          <a href="tel:+12127724150">+11 (000) 111-11-11</a>
+        </div>
+        <div class="contact__icon-envelope">
+          <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+        </div>
+      </div>
+      <ul class="team__social1">
+        <li>
+          <a href="">
+            <svg class="icon">
+              <use href="./images/icons.svg#icon-instagram" />
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <svg class="icon">
+              <use href="./images/icons.svg#icon-twitter" />
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <svg class="icon">
+              <use href="./images/icons.svg#icon-facebook-1" />
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <svg class="icon">
+              <use href="./images/icons.svg#icon-linkedin" />
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
 
     <!--Main section-->
     <main class="main-section">
@@ -56,7 +137,11 @@
         <!--Presentation section-->
         <div class="container presentation-section section">
           <div class="cards">
-            <div class="overlay">Technoduck is a state-of-the-art <br>coronavirus distribution platform. <br>Companies use this platform for <br>digital espionage and attacks on <br>competitors' secure servers.</div>
+            <div class="overlay">
+              Technoduck is a state-of-the-art <br />coronavirus distribution
+              platform. <br />Companies use this platform for <br />digital
+              espionage and attacks on <br />competitors' secure servers.
+            </div>
             <img class="img__overlay" src="images/img1.jpg" alt="Technoduck" />
             <div class="description">
               <p><b>Technoduck</b></p>
@@ -127,68 +212,139 @@
     <!--Footer section-->
     <footer class="footer-section section">
       <div class="container footer">
-        <div class="logo">
-          <div class="footer__logo">
-            <a href="#">Web<span>Studio</span></a>
-          </div>
-          <address class="footer-section__address">
-            <p>695 Park Ave, NY 10065, USA</p>
-            <div class="footer-section__contact">
-              <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+        <ul class="footer__ul">
+          <li>
+            <div class="logo">
+              <div class="footer__logo">
+                <a href="#">Web<span>Studio</span></a>
+              </div>
+              <address class="footer-section__address">
+                <p>695 Park Ave, NY 10065, USA</p>
+                <div class="footer-section__contact">
+                  <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+                </div>
+                <div class="footer-section__contact">
+                  <a href="tel:+12127724150">+1 212-772-4150</a>
+                </div>
+              </address>
             </div>
-            <div class="footer-section__contact">
-              <a href="tel:+12127724150">+1 212-772-4150</a>
+          </li>
+          <li>
+            <div class="social-media">
+              <p>FIND US ON</p>
+              <ul class="social-media__ul">
+                <li>
+                  <a href=""
+                    ><svg class="contact-svg">
+                      <use href="./images/icons.svg#icon-instagram" /></svg
+                  ></a>
+                </li>
+                <li>
+                  <a href=""
+                    ><svg class="contact-svg">
+                      <use href="./images/icons.svg#icon-twitter" /></svg
+                  ></a>
+                </li>
+                <li>
+                  <a href=""
+                    ><svg class="contact-svg">
+                      <use href="./images/icons.svg#icon-facebook-1" /></svg
+                  ></a>
+                </li>
+                <li>
+                  <a href=""
+                    ><svg class="contact-svg">
+                      <use href="./images/icons.svg#icon-linkedin" /></svg
+                  ></a>
+                </li>
+              </ul>
             </div>
-          </address>
-        </div>
-
-        <div class="social-media">
-          <p>FIND US ON</p>
-          <ul class="social-media__ul">
-            <li>
-              <a href=""
-                ><svg class="contact-svg">
-                  <use href="./images/icons.svg#icon-instagram" /></svg
-              ></a>
-            </li>
-            <li>
-              <a href=""
-                ><svg class="contact-svg">
-                  <use href="./images/icons.svg#icon-twitter" /></svg
-              ></a>
-            </li>
-            <li>
-              <a href=""
-                ><svg class="contact-svg">
-                  <use href="./images/icons.svg#icon-facebook-1" /></svg
-              ></a>
-            </li>
-            <li>
-              <a href=""
-                ><svg class="contact-svg">
-                  <use href="./images/icons.svg#icon-linkedin" /></svg
-              ></a>
-            </li>
-          </ul>
-        </div>
-
-        <form class="form-subscribe">
-          <label class="modal-subscribe"
-            >SUBSCRIBE TO THE NEWSLETTER<input
-              type="text"
-              name="useremail"
-              class="input-subscribe"
-              placeholder="E-mail"
-          /></label>
-          <button type="submit" class="subscribe-button">
-            Subscribe<span
-              ><svg class="subscribe-svg">
-                <use href="./images/icons.svg#icon-icon-send" /></svg
-            ></span>
-          </button>
-        </form>
+          </li>
+          <li class="form__subscribe-li">
+            <form class="form-subscribe">
+              <label class="modal-subscribe"
+                >SUBSCRIBE TO THE NEWSLETTER
+                <input
+                  type="text"
+                  name="useremail"
+                  class="input-subscribe"
+                  placeholder="E-mail"
+              /></label>
+              <label class="modal-subscribe__mobile"
+                ><p>SUBSCRIBE</p>
+                <input
+                  type="text"
+                  name="useremail"
+                  class="input-subscribe1"
+                  placeholder="E-mail"
+              /></label>
+              <button type="submit" class="subscribe-button">
+                Subscribe<span
+                  ><svg class="subscribe-svg">
+                    <use href="./images/icons.svg#icon-icon-send" /></svg
+                ></span>
+              </button>
+            </form>
+          </li>
+        </ul>
       </div>
     </footer>
 
+    <div data-modal class="is-hidden">
+      <div data-modal-content="">
+        <button data-modal-close type="button" class="close__button">X</button>
+        <h2 class="modal-title">
+          Leave your information and we'll call you back
+        </h2>
+        <form name="modal-form" class="modal-form">
+          <label class="modal-form__position"
+            >Name<input
+              type="text"
+              name="username"
+              class="modal-form__input" /><svg width="12" height="12px">
+              <use href="./images/icons.svg#icon-person"></use></svg
+          ></label>
+          <label class="modal-form__position"
+            >Telefon
+            <input type="tel" name="userphone" class="modal-form__input" /><svg
+              width="12"
+              height="12px"
+            >
+              <use href="./images/icons.svg#icon-email"></use></svg
+          ></label>
+          <label class="modal-form__position"
+            >Email<input
+              type="email"
+              name="useremail"
+              class="modal-form__input" /><svg width="12" height="12px">
+              <use href="./images/icons.svg#icon-phone"></use></svg
+          ></label>
+          <label class="modal-form__position"
+            >Mesaj
+            <textarea
+              name="mesaj"
+              placeholder="Enter the text"
+              class="modal-form__comments"
+              rows="5"
+            ></textarea>
+          </label>
+          <label class="modal-checkbox__position modal-form__checked"
+            ><input
+              type="checkbox"
+              name="agree"
+              vlaue="agree"
+              class="modal-form__input"
+            /><span class="replace-checkbox modal-form-checkbox__position"
+              ><svg width="12" height="12px">
+                <use href="./images/icons.svg#icon-Vector-1"></use></svg></span
+            >I agree with the letter and accept the
+            <a href="#" class="condition">Terms and Conditions</a></label
+          >
+          <button type="submit" class="modal-form__button">Send</button>
+        </form>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
