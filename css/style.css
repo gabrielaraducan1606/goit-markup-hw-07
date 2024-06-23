@@ -199,7 +199,6 @@ body {
 .hero-section {
   background: var(--black);
   width: 100%;
-  max-width: 1200px;
   height: 600px;
   background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-image.jpg);
   background-size: cover;
@@ -492,7 +491,6 @@ body {
 /*Footer section*/
 .footer-section {
   background-color: var(--black);
-  max-width: 1200px;
   gap: 70px;
   padding: 156px 100px;
   margin-left: auto;
@@ -1241,7 +1239,7 @@ body {
 }
 
 
-@media screen and ((min-width: 428px) and (max-width: 768px)) {
+@media screen and (max-width: 767px) {
 
 
   .container {
@@ -1262,7 +1260,6 @@ body {
 
   .hero-section {
     width: 100%;
-    max-width: 428px;
     height: 432px;
     background-image: linear-gradient(0deg, rgba(47, 48, 68, 0.7), rgba(47, 48, 68, 0.7)), url(../images/dark-bg.jpg);
     background-size: cover;
@@ -1286,6 +1283,11 @@ body {
 
   .hero-title button {
     background-color: var(--iris);
+    border-color: var(--iris);
+  }
+
+  .hero-title button:hover {
+    cursor: pointer;
   }
 
   .about-section {
@@ -1295,7 +1297,14 @@ body {
   .about-section__mobile {
     display: flex;
     padding: 96px 16px;
-    gap: 72px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about-section__mobile__ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   .about-section__mobile__ul li {
@@ -1306,6 +1315,7 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding-bottom: 50px;
   }
 
   .about-section__mobile__ul strong {
@@ -1327,9 +1337,7 @@ body {
     text-align: left;
   }
 
-  .team__social li:hover {
-    background-color: var(--iris);
-  }
+
 
   .team__social1 {
     display: flex;
@@ -1341,6 +1349,10 @@ body {
     fill: var(--white);
   }
 
+  .customers__ul {
+    width: 500px;
+    padding-left: 15%;
+  }
 
   .footer__ul {
     display: flex;
@@ -1348,7 +1360,7 @@ body {
   }
 
   .logo {
-    margin-left: -200px;
+    margin-left: -15%;
     margin-top: -56px;
   }
 
@@ -1357,7 +1369,7 @@ body {
   }
 
   .social-media {
-    margin-left: -200px;
+    margin-left: -50%;
     margin-top: -72px;
   }
 
@@ -1366,7 +1378,7 @@ body {
     flex-direction: column;
     gap: 90px;
     margin-top: -130px;
-    margin-left: -78px;
+    margin-left: 15%;
   }
 
   .modal-subscribe {
@@ -1409,13 +1421,14 @@ body {
     border-radius: 4px;
     background-color: var(--iris);
     text-align: left;
+    border-color: var(--iris);
   }
 
   .form-subscribe svg {
     width: 20px;
     height: 20px;
-    top: 4845px;
-    left: 240px;
+    top: 5050px;
+    left: 450px;
     position: absolute;
     fill: var(--white);
   }
@@ -1429,7 +1442,7 @@ body {
   }
 }
 
-@media screen and ((min-width: 768px) and (max-width: 1119px)) {
+@media screen and ((min-width: 768px) and (max-width: 1158px)) {
   .container {
     max-width: 768px;
     width: 100%;
@@ -1448,7 +1461,6 @@ body {
 
   .hero-section {
     width: 100%;
-    max-width: 768px;
     height: 436px;
     background-image: linear-gradient(0deg, rgba(47, 48, 68, 0.7), rgba(47, 48, 68, 0.7)), url(../images/dark-bg.jpg);
     background-size: cover;
@@ -1472,6 +1484,7 @@ body {
 
   .hero-title button {
     background-color: var(--iris);
+    border-color: var(--iris);
   }
 
   .about-section {
@@ -1486,6 +1499,8 @@ body {
   }
 
   .about-section__mobile ul {
+    justify-content: center;
+    align-items: center;
     display: flex;
     flex-wrap: wrap;
     gap: 72px;
@@ -1533,6 +1548,10 @@ body {
     fill: var(--white);
   }
 
+  .customers__ul {
+    width: 600px;
+    padding-left: 20%;
+  }
 
   .footer__ul {
     display: flex;
@@ -1540,7 +1559,8 @@ body {
   }
 
   .logo {
-    margin-left: -60px;
+    justify-content: center;
+    margin-left: -10%;
     margin-top: -56px;
   }
 
@@ -1549,15 +1569,12 @@ body {
   }
 
   .social-media {
-    margin-left: -20px;
-    margin-top: -10px;
+    margin-left: -25%;
   }
 
   .form-subscribe {
     display: flex;
     gap: 90px;
-    margin-top: -130px;
-    margin-left: 80px;
   }
 
   .modal-subscribe {
@@ -1577,6 +1594,7 @@ body {
     letter-spacing: 0.02em;
     text-align: left;
     margin-bottom: 16px;
+    margin-left: 15%;
   }
 
   .input-subscribe1 {
@@ -1591,21 +1609,22 @@ body {
   }
 
   .subscribe-button {
-    margin-top: 40px;
-    margin-left: -50px;
     width: 165px;
     height: 40px;
     gap: 16px;
     border-radius: 4px;
     background-color: var(--iris);
     text-align: left;
+    margin-top: 42px;
+    margin-left: -70px;
+    border-color: var(--iris);
   }
 
   .form-subscribe svg {
     width: 20px;
     height: 20px;
-    top: 3170px;
-    left: 600px;
+    top: 3223px;
+    left: 660px;
     position: absolute;
     fill: var(--white);
   }
